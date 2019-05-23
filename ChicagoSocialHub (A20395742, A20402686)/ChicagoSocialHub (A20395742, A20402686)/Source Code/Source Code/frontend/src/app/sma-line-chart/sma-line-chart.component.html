@@ -1,0 +1,38 @@
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button mat-raised-button color="primary" routerLink="/find">
+  Home
+  &nbsp;    
+</button>
+&nbsp;&nbsp;
+  
+  
+    <button mat-raised-button color="primary" (click)="goBack()" style="float:right" >
+      <mat-icon>keyboard_backspace</mat-icon>&nbsp;&nbsp;
+      Back
+      &nbsp;    
+    </button>
+  
+    <br>  &nbsp;&nbsp;&nbsp;
+<mat-form-field>
+      
+      <mat-select  [(value)]="selected" (selectionChange)="findChartData($event)">
+        
+        <mat-option value="30">Last Hour</mat-option>
+        <mat-option value="24">Last 24 Hours SMA</mat-option>
+        <mat-option value="1">Last Week SMA</mat-option>
+      </mat-select>
+  </mat-form-field>
+  &nbsp;&nbsp;&nbsp;
+  
+ 
+
+  
+    
+  
+ 
+
+  <br>
+<h2>&nbsp;&nbsp;{{ title }}</h2>
+<svg width="1200" height="500"></svg>
+

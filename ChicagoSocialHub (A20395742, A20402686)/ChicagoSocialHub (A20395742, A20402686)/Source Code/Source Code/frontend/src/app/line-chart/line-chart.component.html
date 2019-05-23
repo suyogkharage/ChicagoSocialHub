@@ -1,0 +1,45 @@
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button mat-raised-button color="primary" (click)="goBackHome()" >
+  Home
+  &nbsp;    
+</button>
+&nbsp;&nbsp; 
+  
+    <button mat-raised-button color="primary" (click)="goBack()" style="float: right" >
+      <mat-icon>keyboard_backspace</mat-icon>&nbsp;&nbsp;
+      Back
+      &nbsp;    
+    </button>
+  
+    <br>  &nbsp;&nbsp;&nbsp;
+<mat-form-field>
+      <mat-label>Time Range</mat-label>
+      <mat-select  [(value)]="selected" (selectionChange)="findChartData($event)">
+        
+        <mat-option value="1">Last Week</mat-option>
+        <mat-option value="30">Last Month</mat-option>
+        <mat-option value="12">Last Year</mat-option>
+      </mat-select>
+  </mat-form-field>
+  &nbsp;&nbsp;&nbsp;
+  
+  <label class="container"> 
+    <input type="checkbox" [(ngModel)]="isChecked"  data-md-icheck (change)="toggleVisibility_hourly(isChecked?24:'D')"/>
+    Daily Average 
+  </label>&nbsp;&nbsp;&nbsp;
+  
+  <label class="container"> 
+    <input type="checkbox" [(ngModel)]="theCheckbox1"  data-md-icheck (change)="toggleVisibility_hourly(theCheckbox1?1:'H')"/>
+    Hourly Average 
+  </label>&nbsp;&nbsp;&nbsp;
+
+  
+    
+  
+ 
+
+  <br>
+<h2>&nbsp;&nbsp;{{ title }}</h2>
+<svg width="1200" height="500"></svg>
+

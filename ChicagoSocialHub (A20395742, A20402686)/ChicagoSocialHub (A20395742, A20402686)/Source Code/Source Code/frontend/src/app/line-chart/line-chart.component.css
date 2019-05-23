@@ -1,0 +1,47 @@
+.axis {
+    font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.axis-title {
+    fill: none;
+    stroke: black;
+    stroke-width: 0.5px;
+}
+
+.axis-title-x {
+    fill: none;
+    stroke: black;
+    stroke-width: 0.5px;
+    float: right;
+}
+
+.axis--x path {
+    /*display: none;*/
+}
+
+.line {
+    fill: none;
+    stroke: green;
+    stroke-width: 1.5px;
+}
+
+.line1 {
+    fill: none;
+    stroke: red;
+    stroke-width: 1.5px;
+}
+
+#button {
+    margin-top: 1px;
+     margin-right: 2px;
+     position:absolute;
+     top:0;
+     right:0;
+}
